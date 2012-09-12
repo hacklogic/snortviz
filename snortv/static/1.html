@@ -1,0 +1,163 @@
+<html>
+<HEAD>
+<title>##Nexusguard##</title>
+<style type="text/css">
+/* base style - edit at own risk */
+html {
+	overflow: hidden;
+}
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+}
+
+/* end base style */
+/* Common Chat Window Style */
+/* Logo width is also the width of the entire window. This should match the length of the logo.*/
+.logoWidth {
+	width: 400px;
+}
+
+body {
+	background-color: # #BodyBgColor ##;
+	color: # #BodyTextColor ##;
+}
+
+#bodySection {
+	height: 100%;
+}
+
+.tbltextcontainer {
+	font-family: verdana;
+	font-size: 10pt;
+	color: # #BodyTextColor ##;
+}
+
+#footerSection {
+	background-color: # #FooterBgColor ##;
+	display: block;
+}
+
+/* End Common Chat Window Style */
+#footerSection {
+	height: 150px;
+	width: 100%;
+}
+
+.headshot {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+}
+
+.chatButtons {
+	height: auto;
+}
+
+.endchat {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.transcript,.customlink {
+	margin-right: 13px;
+}
+
+.endchat,.transcript,.typingstatus,.customlink {
+	float: left;
+	margin-top: 4px;
+	color: # #FooterLinkColor ##;
+}
+
+.sendbutton {
+	margin-top: 1px;
+	float: right;
+	margin-right: 6px;
+}
+
+.conversation {
+	padding-top: 5px;
+	background-color: # #ChatBackgroundColor ##;
+}
+
+.message {
+	width: 100%;
+	height: 105px;
+}
+
+/* Chat Line Style */
+.vMsgLine {
+	display: block;
+	padding-left: 2px;
+}
+
+.vMsgAgentName {
+	color: # #AgentTextColor ##;
+}
+
+.vMsgVisitorName {
+	color: # #VisitorTextColor ##;
+}
+
+.vMsgVisitorText,.vMsgAgentText {
+	color: # #ConversationTextColor ##;
+}
+
+.vSystemMsg .vMsgAgentName {
+	color: # #SystemTextColor ##;
+}
+/* End Chat Line Style */
+</style>
+
+</HEAD>
+<body>
+<table class="tblTextContainer logoWidth" cellspacing="0"
+	cellpadding="0" border="0" frame="border">
+	<tbody>
+		<tr>
+			<!--Header Section -->
+			<td id="headerSection">
+			<div id="header"></div>
+			</td>
+		</tr>
+		<tr>
+			<!-- Body Section -->
+			<td id="bodySection">
+			<div id="conversation" class="conversation" style="overflow-y: auto"></div>
+			</td>
+		</tr>
+		<tr>
+			<!-- Footer -->
+			<td id="footerSection">
+			<table style="height: auto; padding-top: 3px"
+				class="tblTextContainer">
+				<tr>
+					<td style="text-align: center; width: 5px"><img id="headshot"
+						class="headshot" src="" /></td>
+					<td colspan="3" style="padding-right: 8px; height: 100%"><textarea
+						id="message" class="message">
+        			</textarea></td> 
+       
+				</tr>
+			</table>
+				<div class="tblTextContainer chatButtons">
+					<div id="endchat" class="endchat"></div>
+					<div id="transcript" class="transcript"></div>
+					<div id="customlink" class="customlink"></div>
+					<div id="typingstatus" class="typingstatus"></div>
+					<div id="sendbutton" class="sendbutton" type="button"></div>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</HTML>
