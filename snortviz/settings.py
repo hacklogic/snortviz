@@ -1,4 +1,4 @@
-# Django settings for snortv project.
+# Django settings for snortviz project.
 import os
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
@@ -99,10 +99,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'snortv.urls'
+ROOT_URLCONF = 'snortviz.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'snortv.wsgi.application'
+WSGI_APPLICATION = 'snortviz.wsgi.application'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH,'static')
